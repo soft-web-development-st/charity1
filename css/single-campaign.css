@@ -1,0 +1,101 @@
+/* ==========================
+    Single Campaign Showcase
+   ========================== */
+   .single-campaign-showcase {
+    width: 100%;
+    height: 300px;
+    background: url('../images/single-campaign-background.jpg') no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    background-size: 100%;
+    position: relative;
+    border-radius: .1rem;
+    z-index: 1;
+}
+
+.single-campaign-showcase:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+}
+
+.single-campaign-showcase-title {
+    text-align: center;
+}
+
+.single-campaign-showcase-title h2 {
+    font-family: var(--raleway-font-family);
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--theme-font-dark-grey-color);
+    margin-bottom: 1rem;
+}
+
+.single-campaign-showcase-title-btns {
+    font-size: 1.2rem;
+    color: var(--theme-font-dark-grey-color);
+}
+
+.single-campaign-showcase-title-btns span a,
+.single-campaign-showcase-title-btns span i {
+    color: var(--theme-blue-color);
+}
+
+.single-campaign-showcase-title-btns span i {
+    margin: 0 1rem;
+}
+
+.single-campaign-showcase-title-btns span a:hover {
+    color: var(--theme-font-dark-grey-color);
+}
+
+/* ======
+    Main 
+   ====== */
+.single-campaign-post img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.donations-info {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.donations-info span {
+    font-weight: 600;
+}
+
+.raised {
+    color: var(--theme-med-grey-color);
+}
+
+.goal {
+    color: var(--theme-blue-color);
+}
+
+.progress-bar {
+    margin: 1rem 0;
+}
+
+
+.donate-social {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
